@@ -87,6 +87,7 @@ img {
     margin-top: 70px;
     margin-bottom: 80px;
 }
+
 .cake {
     width: 100%;
     position: absolute;
@@ -160,18 +161,30 @@ img {
 
 .inside h1 {
     font-size: 120px;
-    line-height: 120px;
+    line-height: 15px;
 }
 
-@media only screen and (max-width: 300px) {
+p.p-inside {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 480px) {
     .card {
-        padding: 26px;
+        width: 125%;
+        height: 400px;
+        float: none;
     }
-    .outside,
-    .inside {
-        height: 100%;
-        width: 30%;
-        position: center;
-        right: 50.1%;
+    
+    img {
+        width: 400px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+    .top-layer,
+    .middle-layer,
+    .bottom-layer {
+        width: 80%;
+        float: none;
     }
 }
